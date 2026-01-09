@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANK DIÁRIO</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+</head>
+<body>
+    <section class="rank">
+        <h1>RANK DIÁRIO</h1>
+        <form action="" id="checar">
+            <section class="sessao">
+                <div>
+                    <h2>TREINO</h2>
+                    <input type="number" class="val_num" name="" id="exer_feito" value="1">
+                    <p>tempo de cardio <br>em minutos</p>
+                    <input type="number" class="val_num" name="" id="cardio_m" value="2">
+                </div>
+                
+                <div>
+                    <h2>ESTUDO</h2>
+                    <P>pagnas de livros lidos</P>
+                    <input type="number" class="val_num" name="" id="pagnas_l" value="3">
+                    <p>estudo p/h</p>
+                    <input type="number" class="val_num" name="" id="H_estudo" value="4">
+                    <p>exercicios de estudo p/minutos</p>
+                    <input type="number" class="val_num" name="" id="exe_estu" value="5">
+                </div>
+            </section>
+            
+            <section class="sessao">
+                <div>
+                    <h2>ESPIRITO</h2>
+                    <p>capitulos lidos</p>
+                    <input type="number" class="val_num" name="" id="cap_l" value="6">
+                    <p>orou?</p>
+                    sim<input type="radio" class="radio_btn" name="ora" value="sim">
+                    não<input type="radio" class="radio_btn" name="ora" value="não">
+                    <p>versiculos decorados</p>
+                    <input type="number" class="val_num" name="" id="ver_d" value="7">
+                </div>
+                
+                <div>
+                    <h2>EXTRA</h2>
+                    <p>tocou guitarra?</p>
+                    sim<input type="radio" class="radio_btn" name="guita"value="sim">
+                    não<input type="radio" class="radio_btn" name="guita"value="não">
+                    <p>aprendeu algo novo?</p>
+                    sim<input type="radio" class="radio_btn" name="novo" value="sim">
+                    não<input type="radio" class="radio_btn" name="novo" value="não">
+                </div>
+            </section>
+            
+            <section>
+                <h2>PONTOS NEGATIVOS</h2>
+                <P>pecado de estimação</P>
+                sim<input type="radio" class="radio_btn" name="pecado" value="sim" >
+                não<input type="radio" class="radio_btn" name="pecado" value="não" >
+                <p>dormiu menos de 6h.</p>
+                sim<input type="radio" class="radio_btn" name="dormiu"value="sim" >
+                não<input type="radio" class="radio_btn" name="dormiu"value="não" >
+                <p>horas de redes sociais</p>
+                <input type="number" class="val_num" name="redes" id="redes" value="8">
+            </section>
+            <input type="submit" value="checar" id="check">         
+        </form>
+    </section>
+    
+    <section class="resultado">
+        <h1>SEU RANK É</h1>
+        <h1 id="tier">SS</h1>
+        <img src="src/SStier.jpg" id="img_rank" alt="">
+        <h3 id="msg_tier">dia perfeito continue assim</h3>
+        
+        <div class="review">
+            <h3>TREINO</h3>
+            <div class="status_p">
+                <p>qnt exercicios:</p><p id="rqnt_exe"></p>
+            </div>
+            
+            <div class="status_p">
+                <p>tempo de cardio:</p><p id="rqnt_card"></p>
+            </div>
+
+            <h3>ESTUDO</h3>
+            <div class="status_p">
+                <p>pagnas de livros lidos:</p><p id="rqnt_pag"></p>
+            </div>
+
+            <div class="status_p">
+                <p>horas de estudo:</p><p id="rqnt_hestu"></p>
+            </div>
+
+            <div class="status_p">
+                <p>exercicios de estudo:</p><p id="rexer_estu"></p>
+            </div>
+            
+            
+            <h3>ESPIRITO</h3>
+            <div class="status_p">
+                <p>captulos lidos:</p><p id="rcap_lidos"></p>
+            </div>
+            
+            <div class="status_p">
+                <p>orou?:</p><p id="rorou"></p>
+            </div>
+
+            <div class="status_p">
+                <p>versiculos decorados:</p><p id="rv_dec">versiculos decorados:</p>
+            </div>
+            <h3>EXTRA</h3>
+            <div class="status_p">
+                <p>tocou guitarra?:</p><p id="rguita"></p>
+            </div>
+
+            <div class="status_p">
+                <p>aprendeu algo novo?:</p><p id="rnovo"></p>
+            </div>
+            <h3>PONTOS NEGATIVOS</h3>
+            <div class="status_p">
+                <p>pecado de estimação:</p><p id="rpec_estim"></p>
+            </div>
+
+            <div class="status_p">
+                <p>dormiu menos de 6 horas:</p><p id="rqnt_dorm"></p>
+            </div>
+
+            <div class="status_p">
+                <p>horas nas redes sociais</p><p id="rqnt_redes"></p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+div{
+    text-align: center;
+    flex: 1;
+    border: 1px solid orange;
+    margin: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;  
+    background-color: rgb(61, 61, 61);  
+}
+h1{
+    color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h2{
+    color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h3{
+    color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p{
+    color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+form{
+    display: block;
+}
+.sessao{
+    display: flex;
+}
+.rank{
+    width: 500px;
+    text-align: center;
+    border: 3px solid orange;
+    color: white;
+    background-color: rgb(66, 66, 66);
+    
+}
+.resultado{
+    text-align: center;
+    display: none;
+}
+.review{
+    display: block;
+    border: none;
+    width: 400px;
+    text-align: left;
+}
+.status_p{
+    display: flex;
+    color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}.val_num{
+    width: 50px;
+    height: 30px;
+    border: 1px solid orange;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+img{
+    border: 3px solid orange;
+    border-radius: 150px;
+    width: 250px;
+    height: 250px;
+}
+#check{
+    color: white;
+    background-color: orange;
+    border: 1px solid rgb(255, 204, 0);
+    height: 30px;
+    width: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}#tier{
+    font-size: 70px;
+    font-family: 'sonictier';
+}
+input{
+    margin: 5px;
+    background-color: rgb(112, 112, 112);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+@font-face {
+    font-family: 'sonictier';
+    src: url(src/fonts/NiseSegaSonic.TTF);
+}
